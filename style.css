@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  background-color: #eef9bf;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin: 20px 0px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #75b79e;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  display: flex;
+  width: 117px;
+  height: 146px;
+  margin: 17px 0;
+  border: 2px solid #99cea8;
+  border-radius: 5px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #a7e9af;
+  transition: all 0.1s;
+  transform-style: preserve-3d;
+}
+
+ul {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.upCard {
+  transform: rotateY(180deg);
+}
+
+.upCard {
+  background-color: #a7e9af;
+  width: 100%;
+  height: 100%;
+  padding: 24px 7px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.downCard {
+  background-color: #a7e9af;
+  width: 100%;
+  height: 100%;
+  padding: 24px 7px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+li.flip {
+  transform: rotateY(180deg);
+}
+/* start responsivo */
+
+@media screen and (max-width: 400px) {
+  ul {
+    height: 100%;
+  }
+}
